@@ -1,0 +1,590 @@
+@font-face {
+    font-family: 'Product Sans';
+    src: url("../fonts/ProductSans-BlackItalic.woff2") format("woff2"), url("../fonts/ProductSans-BlackItalic.woff") format("woff");
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Product Sans';
+    src: url("../fonts/ProductSans-Light.woff2") format("woff2"), url("../fonts/ProductSans-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Product Sans';
+    src: url("../fonts/ProductSans-LightItalic.woff2") format("woff2"), url("../fonts/ProductSans-LightItalic.woff") format("woff");
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Product Sans';
+    src: url("../fonts/ProductSans-BoldItalic.woff2") format("woff2"), url("../fonts/ProductSans-BoldItalic.woff") format("woff");
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Product Sans';
+    src: url("../fonts/ProductSans-Medium.woff2") format("woff2"), url("../fonts/ProductSans-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Product Sans';
+    src: url("../fonts/ProductSans-Italic.woff2") format("woff2"), url("../fonts/ProductSans-Italic.woff") format("woff");
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Product Sans';
+    src: url("../fonts/ProductSans-Black.woff2") format("woff2"), url("../fonts/ProductSans-Black.woff") format("woff");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Product Sans';
+    src: url("../fonts/ProductSans-Bold.woff2") format("woff2"), url("../fonts/ProductSans-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Product Sans';
+    src: url("../fonts/ProductSans-ThinItalic.woff2") format("woff2"), url("../fonts/ProductSans-ThinItalic.woff") format("woff");
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Product Sans';
+    src: url("../fonts/ProductSans-Regular.woff2") format("woff2"), url("../fonts/ProductSans-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Product Sans';
+    src: url("../fonts/ProductSans-Thin.woff2") format("woff2"), url("../fonts/ProductSans-Thin.woff") format("woff");
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Product Sans';
+    src: url("../fonts/ProductSans-MediumItalic.woff2") format("woff2"), url("../fonts/ProductSans-MediumItalic.woff") format("woff");
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Brinnan';
+    src: url('../fonts/Brinnan-BlackOblique.eot');
+    src: url('../fonts/Brinnan-BlackOblique.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Brinnan-BlackOblique.woff2') format('woff2'),
+        url('../fonts/Brinnan-BlackOblique.woff') format('woff'),
+        url('../fonts/Brinnan-BlackOblique.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Brinnan';
+    src: url('../fonts/Brinnan-Light.eot');
+    src: url('../fonts/Brinnan-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Brinnan-Light.woff2') format('woff2'),
+        url('../fonts/Brinnan-Light.woff') format('woff'),
+        url('../fonts/Brinnan-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Brinnan';
+    src: url('../fonts/Brinnan-Thin.eot');
+    src: url('../fonts/Brinnan-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Brinnan-Thin.woff2') format('woff2'),
+        url('../fonts/Brinnan-Thin.woff') format('woff'),
+        url('../fonts/Brinnan-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Brinnan';
+    src: url('../fonts/Brinnan-BoldOblique.eot');
+    src: url('../fonts/Brinnan-BoldOblique.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Brinnan-BoldOblique.woff2') format('woff2'),
+        url('../fonts/Brinnan-BoldOblique.woff') format('woff'),
+        url('../fonts/Brinnan-BoldOblique.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Brinnan';
+    src: url('../fonts/Brinnan-Black.eot');
+    src: url('../fonts/Brinnan-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Brinnan-Black.woff2') format('woff2'),
+        url('../fonts/Brinnan-Black.woff') format('woff'),
+        url('../fonts/Brinnan-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Brinnan';
+    src: url('../fonts/Brinnan-Oblique.eot');
+    src: url('../fonts/Brinnan-Oblique.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Brinnan-Oblique.woff2') format('woff2'),
+        url('../fonts/Brinnan-Oblique.woff') format('woff'),
+        url('../fonts/Brinnan-Oblique.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Brinnan';
+    src: url('../fonts/Brinnan-Regular.eot');
+    src: url('../fonts/Brinnan-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Brinnan-Regular.woff2') format('woff2'),
+        url('../fonts/Brinnan-Regular.woff') format('woff'),
+        url('../fonts/Brinnan-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Brinnan';
+    src: url('../fonts/Brinnan-LightOblique.eot');
+    src: url('../fonts/Brinnan-LightOblique.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Brinnan-LightOblique.woff2') format('woff2'),
+        url('../fonts/Brinnan-LightOblique.woff') format('woff'),
+        url('../fonts/Brinnan-LightOblique.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Brinnan';
+    src: url('../fonts/Brinnan-ThinOblique.eot');
+    src: url('../fonts/Brinnan-ThinOblique.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Brinnan-ThinOblique.woff2') format('woff2'),
+        url('../fonts/Brinnan-ThinOblique.woff') format('woff'),
+        url('../fonts/Brinnan-ThinOblique.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Brinnan';
+    src: url('../fonts/Brinnan-Bold.eot');
+    src: url('../fonts/Brinnan-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Brinnan-Bold.woff2') format('woff2'),
+        url('../fonts/Brinnan-Bold.woff') format('woff'),
+        url('../fonts/Brinnan-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@mixin product-sens-blackitalic {
+    font-family: 'Product Sans', Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: 900;
+}
+@mixin product-sens-light {
+    font-family: 'Product Sans', Arial, Helvetica, sans-serif;
+    font-weight: 300;
+}
+@mixin product-sens-lightitalic {
+    font-family: 'Product Sans', Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: 300;
+}
+@mixin product-sens-bolditalic {
+    font-family: 'Product Sans', Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: 700;
+}
+@mixin product-sens-medium {
+    font-weight: 500;
+    font-family: 'Product Sans', Arial, Helvetica, sans-serif;
+}
+@mixin poppins-italic {
+    font-family: 'Product Sans', Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: 400;
+}
+@mixin product-sens-black {
+    font-weight: 900;
+    font-family: 'Product Sans', Arial, Helvetica, sans-serif;
+}
+@mixin product-sens-bold {
+    font-weight: 700;
+    font-family: 'Product Sans', Arial, Helvetica, sans-serif;
+}
+@mixin product-sens-thinitalic {
+    font-family: 'Product Sans', Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: 100;
+}
+@mixin product-sens-reqular {
+    font-family: 'Product Sans', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+@mixin product-sens-thin {
+    font-family: 'Product Sans', Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+@mixin poppins-mediumitalic {
+    font-weight: 500;
+    font-family: 'Product Sans', Arial, Helvetica, sans-serif;
+}
+@mixin poppins-black {
+    font-weight: 900;
+    font-family: 'Product Sans', Arial, Helvetica, sans-serif;
+}
+@mixin poppins-black {
+    font-weight: 900;
+    font-family: 'Product Sans', Arial, Helvetica, sans-serif;
+}
+@mixin poppins-black {
+    font-weight: 900;
+    font-family: 'Product Sans', Arial, Helvetica, sans-serif;
+}
+@mixin poppins-black {
+    font-weight: 900;
+    font-family: 'Product Sans', Arial, Helvetica, sans-serif;
+}
+
+@mixin brinnan-blackitalic {
+    font-family: 'Brinnan';
+    font-style: italic;
+    font-weight: 900;
+}
+@mixin brinnan-light {
+    font-family: 'Brinnan';
+    font-style: normal;
+    font-weight: 300;
+}
+@mixin brinnan-thin {
+    font-family: 'Brinnan';
+    font-style: thin;
+    font-weight: 100;
+}
+@mixin brinnan-bolditalic {
+    font-family: 'Brinnan';
+    font-style: italic;
+    font-weight: 700;
+}
+@mixin brinnan-black {
+    font-family: 'Brinnan';
+    font-style: normal;
+    font-weight: 900;
+}
+@mixin brinnan-oblique {
+    font-family: 'Brinnan';
+    font-style: normal;
+    font-weight: 400;
+}
+@mixin brinnan-regular {
+    font-family: 'Brinnan';
+    font-style: normal;
+    font-weight: 400;
+}
+@mixin brinnan-lightoblique {
+    font-family: 'Brinnan';
+    font-style: italic;
+    font-weight: 300;
+}
+@mixin brinnan-thinoblique {
+    font-family: 'Brinnan';
+    font-style: italic;
+    font-weight: 100;
+}
+@mixin brinnan-bold {
+    font-family: 'Brinnan';
+    font-style: normal;
+    font-weight: 700;
+}
+
+
+@mixin placeholders($color) {
+    &::-webkit-input-placeholder {
+        color: $color !important;
+        @include product-sens-reqular;
+    }
+
+    &:-moz-placeholder {
+        /* Firefox 18- */
+        color: $color !important;
+        @include product-sens-reqular;
+
+    }
+
+    &::-moz-placeholder {
+        /* Firefox 19+ */
+        color: $color !important;
+        @include product-sens-reqular;
+
+    }
+
+    &:-ms-input-placeholder {
+        color: $color !important;
+        @include product-sens-reqular;
+    }
+}
+
+@mixin box-shadow() {
+    -webkit-box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.10); /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.10); /* Firefox 3.5 - 3.6 */
+    box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.10); /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
+@mixin bd-radius($value) {
+    -webkit-border-radius: $value;
+    -moz-border-radius: $value;
+    border-radius: $value;
+}
+
+@mixin transition() {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+@mixin after-before() {
+    top: 0;
+    left: 0;
+    content: '';
+    position: absolute;
+}
+@mixin ellipsis($width) {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: $width;
+}
+@mixin layout {
+    background: $white;
+    @include bd-radius(12px);
+
+}
+@mixin scrollbar {
+    &::-webkit-scrollbar-track {
+        border-radius: 10px;
+        background-color: $WhiteSmoke;
+    }
+
+    &::-webkit-scrollbar {
+        width: 6px;
+        background-color: $WhiteSmoke;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        border-radius: 5px;
+        background:$themecolor;
+    }
+}
+@mixin horizantal-center {
+    display: flex;
+    display: -ms-flexbox;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    align-content: center;
+}
+@mixin vertical-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+@mixin pixelborder{
+    position: relative;
+    z-index: 1;
+    @include transition();
+    background: transparent;
+    border-style: solid;
+    border-width: 4px;
+    border-color: $themecolor;
+    border-image-slice: 4;
+    border-image-width: 3;
+    border-image-outset: 0;
+    border-image-source: url(../images/pixel.svg);
+    &::after{
+        @include transition();
+        @include after-before;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: $themecolor;
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+}
+@mixin pixelborderfill{
+    position: relative;
+    @include transition();
+    background: transparent;
+    border-style: solid;
+    border-width: 4px;
+    border-color: $themecolor;
+    border-image-slice: 4;
+    border-image-width: 3;
+    border-image-outset: 0;
+    border-image-source: url(../images/pixel.svg);
+    &::after{
+        @include transition();
+        @include after-before;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: $themecolor;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+@mixin pixelborderblue{
+    position: relative;
+    z-index: 1;
+    @include transition();
+    background: transparent;
+    border-style: solid;
+    border-width: 4px;
+    border-color: $SummerSky;
+    border-image-slice: 4;
+    border-image-width: 3;
+    border-image-outset: 0;
+    border-image-source: url(../images/pixel-blue.svg);
+    &::after{
+        @include transition();
+        @include after-before;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: $themecolor;
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    
+}
+@mixin pixelborderfillblue{
+    position: relative;
+    @include transition();
+    background: transparent;
+    border-style: solid;
+    border-width: 4px;
+    border-color: $SummerSky;
+    border-image-slice: 4;
+    border-image-width: 3;
+    border-image-outset: 0;
+    border-image-source: url(../images/pixel-blue.svg);
+    &::after{
+        @include transition();
+        @include after-before;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: $SummerSky;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+@mixin pixelborderfilldarkblue{
+    position: relative;
+    @include transition();
+    background: transparent;
+    border-style: solid;
+    border-width: 4px;
+    border-color: $Mariner;
+    border-image-slice: 4;
+    border-image-width: 3;
+    border-image-outset: 0;
+    border-image-source: url(../images/pixel-darkblue.svg);
+    &::after{
+        @include transition();
+        @include after-before;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: $Mariner;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+@mixin pixelborderwhite{
+    position: relative;
+    z-index: 1;
+    @include transition();
+    background: transparent;
+    border-style: solid;
+    border-width: 4px;
+    border-color: $white;
+    border-image-slice: 4;
+    border-image-width: 3;
+    border-image-outset: 0;
+    border-image-source: url(../images/pixel-white.svg);
+    &::after{
+        @include transition();
+        @include after-before;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: $white;
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+}
+@mixin pixelborderfillwhite{
+    position: relative;
+    @include transition();
+    background: transparent;
+    border-style: solid;
+    border-width: 4px;
+    border-color: $white;
+    border-image-slice: 4;
+    border-image-width: 3;
+    border-image-outset: 0;
+    border-image-source: url(../images/pixel-white.svg);
+    &::after{
+        @include transition();
+        @include after-before;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: $white;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+@mixin pixelbordergray{
+    position: relative;
+    @include transition();
+    background: transparent;
+    border-style: solid;
+    border-width: 3px;
+    border-color: $GreyChateau;
+    border-image-slice: 4;
+    border-image-width: 3;
+    border-image-outset: 0;
+    border-image-source: url(../images/pixel-drakgray.svg);
+    &::after{
+        @include transition();
+        @include after-before;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: $themecolor;
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+}

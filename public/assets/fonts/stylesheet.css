@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'Brinnan';
+    src: url('Brinnan-BlackOblique.eot');
+    src: url('Brinnan-BlackOblique.eot?#iefix') format('embedded-opentype'),
+        url('Brinnan-BlackOblique.woff2') format('woff2'),
+        url('Brinnan-BlackOblique.woff') format('woff'),
+        url('Brinnan-BlackOblique.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Brinnan';
+    src: url('Brinnan-Light.eot');
+    src: url('Brinnan-Light.eot?#iefix') format('embedded-opentype'),
+        url('Brinnan-Light.woff2') format('woff2'),
+        url('Brinnan-Light.woff') format('woff'),
+        url('Brinnan-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Brinnan';
+    src: url('Brinnan-Thin.eot');
+    src: url('Brinnan-Thin.eot?#iefix') format('embedded-opentype'),
+        url('Brinnan-Thin.woff2') format('woff2'),
+        url('Brinnan-Thin.woff') format('woff'),
+        url('Brinnan-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Brinnan';
+    src: url('Brinnan-BoldOblique.eot');
+    src: url('Brinnan-BoldOblique.eot?#iefix') format('embedded-opentype'),
+        url('Brinnan-BoldOblique.woff2') format('woff2'),
+        url('Brinnan-BoldOblique.woff') format('woff'),
+        url('Brinnan-BoldOblique.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Brinnan';
+    src: url('Brinnan-Black.eot');
+    src: url('Brinnan-Black.eot?#iefix') format('embedded-opentype'),
+        url('Brinnan-Black.woff2') format('woff2'),
+        url('Brinnan-Black.woff') format('woff'),
+        url('Brinnan-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Brinnan';
+    src: url('Brinnan-Oblique.eot');
+    src: url('Brinnan-Oblique.eot?#iefix') format('embedded-opentype'),
+        url('Brinnan-Oblique.woff2') format('woff2'),
+        url('Brinnan-Oblique.woff') format('woff'),
+        url('Brinnan-Oblique.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Brinnan';
+    src: url('Brinnan-Regular.eot');
+    src: url('Brinnan-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Brinnan-Regular.woff2') format('woff2'),
+        url('Brinnan-Regular.woff') format('woff'),
+        url('Brinnan-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Brinnan';
+    src: url('Brinnan-LightOblique.eot');
+    src: url('Brinnan-LightOblique.eot?#iefix') format('embedded-opentype'),
+        url('Brinnan-LightOblique.woff2') format('woff2'),
+        url('Brinnan-LightOblique.woff') format('woff'),
+        url('Brinnan-LightOblique.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Brinnan';
+    src: url('Brinnan-ThinOblique.eot');
+    src: url('Brinnan-ThinOblique.eot?#iefix') format('embedded-opentype'),
+        url('Brinnan-ThinOblique.woff2') format('woff2'),
+        url('Brinnan-ThinOblique.woff') format('woff'),
+        url('Brinnan-ThinOblique.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Brinnan';
+    src: url('Brinnan-Bold.eot');
+    src: url('Brinnan-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Brinnan-Bold.woff2') format('woff2'),
+        url('Brinnan-Bold.woff') format('woff'),
+        url('Brinnan-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+

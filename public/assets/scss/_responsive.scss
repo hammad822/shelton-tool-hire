@@ -1,0 +1,1143 @@
+@media (max-width: 1680px){
+    .rt-content {
+        padding: 30px 0 30px 110px;
+    }
+    .rt-sidebar-menu{
+        width: 80px;
+        .rt-navigation .at-submenu{
+            padding: 0;
+        }
+        &:hover{
+            width: 300px;
+            .rt-navigation .at-submenu{
+                padding-left: 40px;
+            }
+        }
+    }
+    .rt-profilepage{
+        padding: 0 30px 30px 90px;
+    }
+    .rt-manage-subscription,
+    .rt-helpfaq {
+        padding: 30px 30px 30px 90px;
+    }
+    .rt-userdetailpage {
+        padding: 0 30px 0 90px;
+    }
+    .rt-beacreater-content {
+        margin: 110px auto;
+    }
+    .rt-membership-area {
+        padding: 30px 0 124px;
+    }
+}
+@media (max-width: 1659px){
+    .rt-contentbox{
+        height: 100%;
+    }
+    .rt-statistics {
+        grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
+    }
+}
+@media (max-width: 1560px){
+    .rt-leftsidebar {
+        width: 300px;
+        margin-right: 20px;
+    }
+    .rt-rightsidebar {
+        width: 300px;
+        margin-left: 30px;
+    }
+    .rt-contentbox{
+        width: calc(100% - 660px);
+    }
+    .rt-settingcontent-holder{
+        padding: 40px 30px;
+    }
+    .rt-reported-content .rt-contentbox{
+        width: 100%;
+    }
+}
+@media (max-width: 1440px){
+    html {
+        font-size: 54.5% !important;
+    }
+    .rt-texbox{
+        margin-left: 100px;
+    }
+    .rt-loginsignup-content{
+        padding: 100px 0;
+    }
+    .rt-loginsignup{
+        background-position: 74% 22%;
+    }
+    .rt-texbox h1{
+        font-size: 6rem;
+    }
+    .rt-manage-subscriptiondetail {
+        margin-right: 30px;
+        width: calc(100% - 450px);
+    }
+    .rt-faqarea{
+        max-width: 100%;
+    }
+}
+@media (max-width: 1380px){
+    .rt-settingcontent {
+        width: calc(100% - 350px);
+    }
+    .rt-pagebuild .rt-settingcontent-box{
+        width: calc(100% - 350px);
+    }
+    .rt-pagebuild .rt-settingsidebar {
+        width: 350px;
+    }
+    .rt-head .rt-title h3{
+        font-size: 15px;
+    }
+    .rt-createrslider .rt-userprofilebox .rt-titlebox h5{
+        font-size: 14px;
+    }
+    .rt-membership-content{
+        grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    }
+}
+@media (max-width: 1360px){
+    .rt-content-area{
+        position: relative;
+    }
+    .rt-contentbox {
+        width: calc(100% - 330px);
+    }
+    .rt-collapsbtn{
+        display: block;
+    }
+    .rt-rightsidebar{
+        right: -360px;
+        position: absolute;
+    }
+    .rt-sidebar-expand{
+        right: -60px;
+        .rt-collapsbtn i {
+            transform: rotate(270deg);
+        }
+    }
+    .rt-leftsidebar{
+        .rt-collapsbtn{
+            display: none;
+        }
+    }
+    .rt-suggestionsbox{
+        background: $white;
+    }
+    .rt-statistics {
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    }
+    .rt-rightsidebar .rt-membership-slider{
+        background: $white;
+    }
+    .rt-statistics {
+        grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    }
+}
+@media (max-width: 1280px){
+    .rt-chatcontentarea .rt-chatcontent .rt-messagetextbox{
+        max-width: calc(100% - 54px);
+    }
+    .rt-notification-list .rt-themecontent .rt-titlebox h5{
+        font-size: 16px;
+    }
+    .rt-bannercontent{
+        flex-wrap: wrap;
+    }
+    .rt-bannercontent .rt-rightbox{
+        margin-top: 20px;
+    }
+
+}
+@media (max-width: 1200px){}
+@media (max-width: 1199px){
+    .rt-loginsignup{
+        background-position: 100% 0%;
+    }
+    .rt-texbox h1 {
+        font-size: 4.5rem;
+    }
+    .rt-topsearch{
+        width: auto;
+        max-width: 100%;
+        margin: 0 20px 0 auto;
+    }
+    .rt-topsearch .rt-collapssearchbtn{
+        display: block;
+        font-size: 22px;
+    }
+    .rt-topsearch .rt-themeform {
+        left: 0;
+        top: -96px;
+        z-index: 11;
+        width: 100%;
+        height: 96px;
+        margin-left: 0;
+        position: absolute;
+        @include transition;
+    }
+    .rt-topsearch .rt-inputwithbg{
+        border: 0;
+        height: 100%;
+    }
+    .rt-topsearch .rt-inputwithbtn .form-control {
+        height: 100%;
+        font-size: 2rem;
+        padding: 30px 60px 30px 60px;
+    }
+    .rt-topsearch .rt-inputwithbtn .rt-searchbtn,
+    .rt-topsearch .rt-inputwithbtn button, .rt-topsearch .rt-inputwithicon i{
+        height: 96px;
+    }
+    .rt-topsearch .rt-inputwithbtn .rt-collapssearchbtn{
+        left: 20px;
+        font-size: 14px;
+        color: $themecolor;
+    }
+    .rt-topsearch .rt-inputwithbtn .rt-searchbtn{
+        right: 25px;
+        font-size: 2.5rem;
+    }
+    .rt-searchbar-expand .rt-themeform{
+        top: 0;
+    }
+    .rt-manage-subscriptionarea {
+        flex-direction: column;
+    }
+    .rt-manage-subscriptiondetail {
+        width: 100%;
+        margin: 0 0 30px;
+    }
+    .rt-manage-subscriptionarea .rt-sidebar {
+        width: 100%;
+    }
+    .rt-paymentmethod{
+        background-size: cover;
+    }
+    .rt-settingcontent-area{
+        flex-direction: column;
+    }
+    .rt-settingcontent-area{
+        flex-direction: column;
+    }
+    .rt-settingcontent{
+        width: 100%;
+        margin: 0 0 30px;
+    }
+    .rt-bannercontent{
+        flex-direction: column;
+    }
+    .rt-bannercontent .rt-infobox{
+        margin: 20px 0 0;
+    }
+    .rt-beacreater-content{
+        width: 100%;
+    }
+    .rt-categories-content {
+        margin: 0;
+        width: calc(100% - 330px);
+    }
+    .rt-categories-list span{
+        font-size: 15px;
+    }
+    .rt-categories-list span em{
+        font-size: 13px;
+    }
+    .rt-pagebuild .rt-settingcontent-box {
+        width: 100%;
+        margin: 0 0 30px;
+    }
+    .rt-pagebuild .rt-settingsidebar {
+        width: 100%;
+    }
+    .rt-pagebuild .rt-settingsidebar .rt-pageheading .rt-btn{
+        margin: 0;
+    }
+    .rt-chartandstatistics{
+        flex-direction: column;
+    }
+    .rt-fansandcreatorchart{
+        width: 100%;
+        margin: 0  0 30px;
+    }
+    .rt-statistics{
+        margin: 0;
+        width: 100%;
+    }
+    .rt-creatormanagement .rt-pageheading{
+        flex-direction: column;
+        align-items: flex-start;
+        h2{
+            margin-bottom: 10px;
+        }
+        .rt-rightarea{
+            flex-wrap: wrap;
+            margin: 0;
+        }
+        .rt-search{
+            margin-bottom: 10px;
+        }
+    }
+}
+@media (max-width: 1024px){
+    .rt-collapsbtn{
+        width: 30px;
+        left: -30px;
+        height: 30px;
+    }
+    .rt-leftsidebar{
+        .rt-collapsbtn{
+            width: 30px;
+            height: 30px;
+            left: auto;
+            right: -120px;
+            display: block;
+            i{
+                @include transition;
+                transform: rotate(270deg);
+            }
+        }
+    }
+    .rt-contentbox {
+        width: 100%;
+    }
+    .rt-leftsidebar {
+        z-index: 2;
+        left: -423px;
+        position: absolute;
+        @include transition;
+    }
+    .rt-leftsidebar-expand{
+        left: -40px;
+        .rt-collapsbtn i {
+            transform: rotate(90deg);
+        }
+        .rt-collapsbtn{
+            right: -30px;
+        }
+    }
+    .rt-userprofilebox,
+    .rt-aboutbox{
+        background: $white;
+    }
+    .rt-creatersarea .rt-userprofilebox{
+        @include layout;
+    }
+    .rt-subscriptionbox{
+        background: $white;
+    }
+    .rt-creatormanagement{
+        .rt-search{
+            width: 100%;
+            margin-right: 0;
+        }
+    }
+    .rt-creatorrequest-btn{
+        margin: 0;
+    }
+    .rt-creatormanagement .rt-themeselect{
+        margin-right: 15px;
+    }
+}
+@media (max-width: 991px){
+    .rt-container{
+        max-width: 100%;
+    }
+/*     .rt-content {
+        padding: 30px 30px 30px 90px;
+    } */
+    .rt-loginsignup-content{
+        flex-direction: column;
+    }
+    .rt-themefrombox{
+        order: 2;
+        width: 100%;
+    }
+    .rt-texbox {
+        order: 1;
+        width: 100%;
+        margin: 0 0 40px;
+        text-align: center;
+    }
+    .rt-signupmodal .rt-contentbox{
+        padding: 30px 15px;
+    }
+    .rt-topcreaterspage .rt-pageheading .rt-rightbox,
+    .rt-explorecreaterspage .rt-pageheading .rt-rightbox{
+        margin: 15px 0 0;
+        flex-wrap: wrap;
+    }
+    .rt-chatroom{
+        padding-left: 35px;
+    }
+    .rt-chatbtn{
+        left: 0px;
+        z-index: 2;
+        display: block;
+        position: absolute;
+    }
+    .rt-chatsidebar{
+        z-index: 2;
+        left: -360px;
+        position: absolute;
+        @include transition;
+    }
+    .rt-tabcontent {
+        width: 100%;
+    }
+    .rt-chatsidebar-expand .rt-chatsidebar{
+        left: 0;
+    }
+    .rt-chatsidebar-expand .rt-chatbtn{
+        left: 360px;
+        i{
+            transform: rotate(90deg);
+        }
+    }
+    .table > thead > tr > th,
+    table > thead > tr > th{
+        padding: 15px;
+    }
+    .table td {
+        padding: 15px;
+    }
+    .rt-accordion .card-body p{
+        font-size: 14px;
+    }
+    .rt-settingform .rt-uploadimagearea{
+        flex-direction: column;
+    }
+    .rt-settingform .rt-roundimage{
+        margin: 0 0 20px;
+    }
+    .rt-settingform .rt-uploadimagearea .rt-btn{
+        margin: 0 0 15px;
+    }
+    .rt-settingform .rt-labelbox{
+        width: 100%;
+    }
+    .rt-settingform .rt-inputbox{
+        width: 100%;
+    }
+    .rt-statistics-area .rt-pageheading{
+        flex-direction: row;
+        align-items: center;
+    }
+    .rt-loginsignup-content .rt-themefrombox{
+        width: 490px;
+        margin: 0 auto;
+    }
+    .rt-beacreater-content{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .rt-beacreater-content {
+        margin: 50px auto;
+    }
+    .rt-categories-content {
+        order: 2;
+        width: 100%;
+    }
+    .rt-category-image{
+        order: 1;
+        margin: 0 auto 20px;
+    }
+    .rt-pickcurrency-content{
+        order: 2;
+        width: 100%;
+    }
+    .rt-pickcurrency-image{
+        order: 1;
+        margin: 0 auto 20px;
+    }
+    .rt-socialaccount-content{
+        order: 2;
+        margin: 0;
+        width: 100%;
+    }
+    .rt-socialaccount-image{
+        order: 1;
+        margin: 0 auto 20px;
+    }
+    .rt-pagebuild .rt-settingform .rt-labelbox {
+        width: 100%;
+    }
+    .rt-pagebuild .rt-settingform .rt-inputbox {
+        width: 100%;
+    }
+    .rt-fanmanagement .rt-pageheading{
+        flex-direction: column;
+        align-items: flex-start;
+        h2{
+            margin-bottom: 10px;
+        }
+        .rt-rightarea{
+            margin: 0;
+            .rt-search{
+                margin-bottom: 10px;
+            }
+        }
+    }
+    .rt-creator-requests .rt-pageheading{
+        flex-direction: column;
+        align-items: flex-start;
+        h2{
+            margin-bottom: 10px;
+        }
+        .rt-rightarea{
+            margin: 0;
+            width: 100%;
+            flex-wrap: wrap;
+        }
+    }
+}
+@media (max-width: 809px){
+    .rt-creatersarea{
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+}
+@media (max-width: 767px){
+    .rt-profiledropdown .rt-titlebox{
+        display: none;
+    }
+    .rt-addnav .rt-notificationdropdown {
+        margin: 0 25px;
+    }
+    .rt-inputwithcoinbox .rt-right{
+        padding: 0 15px;
+        position: static;
+        background: #fff;
+    }
+    .rt-inputwithcoinbox .at-postbtn{
+        margin-left: auto;
+    }
+    .rt-inputwithcoinbox .form-control{
+        padding: 15px 20px;
+    }
+    .rt-topsearch {
+        margin: 0 20px 0 0;
+    }
+    .rt-addnavarea {
+        margin-left: auto;
+        flex-grow: initial;
+    }
+    .rt-buycoinsbox .rt-themedropdownmenu,
+    .rt-coindropdown .rt-themedropdownmenu{
+        transform: none !important;
+        top: 40px !important;
+    }
+    .rt-redeemcoins .rt-inputwithbtn{
+        width: 100%;
+    }
+    .rt-fanmanagement .rt-pageheading .rt-rightarea{
+        flex-direction: column;
+        align-items: flex-start;
+        .rt-search{
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    }
+    .rt-creator-requests .rt-pageheading .rt-rightarea{
+        .rt-search{
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 10px;
+            .form-control{
+                width: 100%;
+            }
+        }
+    }
+    .rt-coinpolicy .rt-description{
+        padding: 0;
+    }
+}
+@media (max-width: 639px){
+    .rt-addnav .rt-coinbox{
+        margin-right: 40px;
+    }
+    .rt-topsearch .rt-themeform{
+        top: 60px;
+        left: -100%;
+        height: 85px;
+    }
+    .rt-searchbar-expand .rt-themeform{
+        left: 0;
+    }
+    .rt-menubtn{
+        display: block;
+        font-size: 25px;
+        margin-left: 15px;
+        color: $themecolor;
+        // margin: -10px 15px 0 0;
+    }
+    .rt-sidebar-menu{
+        left: -300px;
+        width: 300px;
+        background: #fff;
+        @include transition;
+    }
+    .rt-opensidebar .rt-sidebar-menu{
+        left: 0;
+    }
+    .rt-navigation ul li a span{
+        right: -25px;
+    }
+    .rt-content {
+        padding: 30px 0;
+    }
+    .rt-rightsidebar{
+        right: -330px;
+    }
+    .rt-sidebar-expand{
+        right: -30px;
+    }
+    .rt-settingform label{
+        font-size: 14px;
+    }
+    .rt-settingsidebar .rt-heading h3{
+        font-size: 2.2rem;
+    }
+    .rt-nav .rt-rightarea{
+        margin: 0 auto;
+    }
+    .rt-categories-list li{
+        width: 100%;
+    }
+    .rt-bannercontent .rt-rightbox .rt-btn{
+        min-width: 115px;
+        height: 45px;
+    }
+}
+@media (max-width: 600px){
+    .rt-buycoinsbox .rt-themedropdownmenu,
+    .rt-coindropdown .rt-themedropdownmenu{
+        right: -80px !important;
+    }
+}
+@media (max-width: 575px){
+    .rt-container{
+        max-width: 100%;
+        padding: 0 15px;
+    }
+    .rt-chatroomarea{
+        .rt-container{
+            padding: 0 15px 0 30px;
+        }
+    }
+    .rt-loginsignup-content {
+        padding: 50px 0;
+    }
+    .rt-signupmodal .rt-content{
+        flex-direction: column;
+    }
+    .rt-signupmodal .rt-modal-content {
+        padding: 20px 20px 50px;
+    }
+
+    .rt-addnav .rt-coinbox {
+        margin-right: 0px;
+    }
+    .rt-header .rt-container{
+        padding: 0 15px;
+    }
+    .rt-topcreaterspage .rt-pageheading .rt-rightbox,
+    .rt-explorecreaterspage .rt-pageheading .rt-rightbox{
+        flex-direction: column;
+    }
+    .rt-topcreaterspage .rt-pageheading .rt-select:first-child,
+    .rt-explorecreaterspage .rt-pageheading .rt-select:first-child{
+        margin: 0 0 15px;
+    }
+    .rt-postcontent .rt-heading{
+        flex-direction: column;
+    }
+    .rt-postcontent .rt-rightbox{
+        width: 100%;
+        margin: 15px 0 0;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .rt-postcontent .rt-rightbox .rt-coins{
+        margin-left: auto;
+    }
+    .rt-accordion .rt-card{
+        margin-bottom: 30px;
+        padding-bottom: 10px;
+    }
+    .rt-loginsignup-content .rt-themefrombox{
+        width: 100%;
+    }
+    .rt-loginsignup-area .rt-container{
+        padding: 0 15px;
+    }
+    .rt-socialaccount-image{
+        width: 100%;
+    }
+    .rt-membershiplist{
+        min-height: 100%;
+        margin-bottom: 15px;
+    }
+    .rt-percentage,
+    .rt-imagebox{
+        min-height: 100%;
+    }
+    .rt-thememodal .modal-dialog{
+        margin: 0 auto;
+    }
+    .rt-tabsnav a{
+        font-size: 2rem;
+        padding: 0 10px;
+    }
+    .rt-redeemcoins .rt-inputwithbtn .form-control{
+        padding: 15px 20px;
+    }
+    .rt-redeemcoins .rt-inputwithbtn .rt-countandbtn{
+        width: 100%;
+        padding: 0 20px;
+        position: static;
+        .rt-btn{
+            margin-left: auto;
+        }
+    }
+    .rt-postimage{
+        height: 300px;
+    }
+}
+@media (max-width: 500px){
+    .rt-thememodal .modal-dialog{
+        max-width: 100%;
+    }
+    .rt-btn2{
+        min-width: auto;
+    }
+    .rt-subscriptions{
+        padding: 15px;
+    }
+    .rt-thememodal .modal-dialog{
+        margin: 0 15px;
+    }
+    .rt-contentboxmodal .rt-btn2{
+        min-width: 47%;
+    }
+
+}
+@media (max-width: 479px){
+    html {
+        font-size: 44.5% !important;
+    }
+    .rt-themefrombox{
+        padding: 30px 15px;
+    }
+    .rt-sendemailmodal .rt-content{
+        padding: 40px 20px;
+    }
+    .rt-btn{
+        font-size: 14px;
+    }
+    .rt-menubtn{
+        font-size: 20px;
+        margin-left: 10px;
+    }
+    .rt-topsearch .rt-collapssearchbtn{
+        font-size: 18px;
+    }
+    .rt-addnav .rt-coinbox img{
+        width: 16px;
+    }
+    .rt-topsearch {
+        margin: 0 10px 0 0;
+    }
+    .rt-addnav .rt-coinbox{
+        padding: 5px;
+    }
+    .rt-addnav .rt-coinbox span{
+        min-width: 50px;
+        font-size: 14px;
+    }
+    .rt-addnav .rt-coinbox .rt-coindropdown .rt-addcoinbtn{
+        width: 30px;
+        height: 30px;
+        font-size: 15px;
+        line-height: 27px;
+    }
+    .rt-addnav .rt-notificationdropdown {
+        margin: 0 20px;
+    }
+    .rt-addnav .rt-notificationdropdown .rt-notificationbtn{
+        font-size: 16px;
+    }
+    .rt-profiledropdown .rt-roundimage{
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+    .rt-profiledropdown i.icon-down-arrow{
+        font-size: 7px;
+    }
+    .rt-postcontent .rt-actionbtns{
+        padding: 10px 0;
+    }
+    .rt-heading{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .rt-heading .rt-rightbox{
+        margin: 15px 0 0;
+    }
+    .rt-postimage .rt-overlay{
+        padding: 0 20px;
+        text-align: center;
+    }
+    .rt-replycomment {
+        padding-left: 0;
+    }
+    .rt-heading .rt-rightbox {
+        margin: 10px 0 0;
+    }
+    .rt-postcontent .rt-heading .rt-rightbox{
+        width: 100%;
+        flex-direction: row;
+    }
+    .rt-postcontent .rt-rightbox .rt-coins{
+        margin-left: auto;
+    }
+    .rt-inputwithcoinbox .rt-right{
+        padding: 0 5px;
+    }
+    .rt-inputwithcoinbox .at-postbtn {
+        margin: 0px 0px 0 10px;
+    }
+    .rt-commentsarea {
+        padding: 10px 20px;
+    }
+    .rt-postcontent .rt-actionbtns button{
+        font-size: 14px;
+        margin-right: 15px;
+    }
+    .rt-postcontent .rt-rightbox .rt-actionbtn i{
+        font-size: 16px;
+    }
+    .rt-postcontent .rt-rightbox .rt-actionbtn{
+        font-size: 14px;
+    }
+    .rt-postcontent .rt-heading{
+        margin-bottom: 0;
+    }
+    .rt-commentsarea .rt-title h5{
+        margin-right: 10px;
+    }
+    .rt-withdote::after{
+        width: 0;
+        height: 0;
+    }
+    .rt-addnav .rt-coinbox {
+        margin-right: 20px;
+    }
+    .rt-topcreaterspage .rt-pageheading .rt-rightbox,
+    .rt-explorecreaterspage .rt-pageheading .rt-rightbox{
+        width: 100%;
+    }
+    .rt-topcreaterspage .rt-pageheading .rt-select,
+    .rt-explorecreaterspage .rt-pageheading .rt-select{
+        width: 100%;
+    }
+    .rt-chatsidebar{
+        width: 300px;
+    }
+    .rt-chatroom{
+        padding: 0;
+        overflow: inherit;
+    }
+    .rt-chatbtn{
+        width: 30px;
+        left: -30px;
+        height: 30px;
+        font-size: 8px;
+        line-height: 30px;
+    }
+    .rt-chatsidebar-expand .rt-chatbtn {
+        left: 300px;
+    }
+    .rt-chatcontentarea .rt-chatcontent .rt-roundimage{
+        display: none;
+    }
+    .rt-chatcontentarea .rt-chatcontent .rt-messagetextbox {
+        max-width: 100%;
+    }
+    .rt-chatcontentarea .rt-chatcontent .rt-messagetextbox .rt-title {
+        margin-bottom: 15px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .rt-paymentmethodcontent p{
+        text-align: center;
+    }
+    .rt-paymentmethodcontent{
+        padding: 40px 20px 60px;
+    }
+    .rt-paymenthistory .rt-paymenthistorylist li .rt-themecontent{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .rt-paymenthistory .rt-paymenthistorylist li .rt-rightbox {
+        margin: 10px 0 0;
+    }
+    .rt-settingcontent-holder {
+        padding: 40px 15px;
+    }
+    .rt-settingcontent .rt-btns{
+        flex-direction: column;
+    }
+    .rt-settingcontent .rt-btns .rt-btn{
+        margin: 0 0 20px;
+    }
+    .rt-notification-list .rt-themecontent .rt-titlebox h5 {
+        font-size: 14px;
+    }
+    .rt-settingform .rt-inputbox .rt-uploadimage .rt-figcaption h4{
+        font-size: 18px;
+    }
+    .rt-settingcontent-holder .rt-heading h3{
+        font-size: 18px;
+    }
+    .rt-appsbox,
+    .rt-changepasswordbbox,
+    .rt-notificationsbox{
+        padding: 30px 15px;
+    }
+    .rt-pageheading .rt-title h2{
+        font-size: 18px;
+    }
+    .rt-buycoinsbox {
+        padding: 30px 20px;
+    }
+    .rt-statistics {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+    .rt-statisticbox{
+        height: 160px;
+    }
+    .rt-statisticbox h3{
+        font-size: 2.8rem;
+    }
+    .rt-themedropdownmenu{
+        min-width: 260px;
+    }
+    .rt-lockdropdown .rt-themedropdownmenu{
+        width: 260px;
+    }
+    .dropdown-item{
+        white-space: pre-wrap;
+    }
+    .rt-buycoinsbox .rt-themedropdownmenu,
+    .rt-coindropdown .rt-themedropdownmenu{
+        right: -142px !important;
+        min-width: 340px;
+    }
+    .rt-loginsignup-content .d-flex{
+        flex-direction: column;
+    }
+    .rt-loginsignup-content .rt-themefrombox .rt-customcheckbox{
+        margin: 0 0 10px;
+    }
+    .rt-loginsignup-content .rt-themefrombox .rt-forgetpassword{
+        margin: 0 auto;
+    }
+    .rt-loginsignup-content .rt-texbox h1 {
+        font-size: 3.5rem;
+    }
+    .rt-loginsignup-content .rt-facebookbtn i{
+        display: none;
+    }
+    .rt-bannercontent{
+        flex-direction: column;
+    }
+    .rt-bannercontent .rt-themecontent{
+        flex-direction: column;
+    }
+    .rt-bannercontent .rt-infobox{
+        flex-direction: column;
+    }
+    .rt-bannercontent .rt-infobox li{
+        padding: 5px 0;
+    }
+    .rt-bannercontent .rt-rightbox{
+        flex-direction: column;
+        width: 100%;
+    }
+    .rt-bannercontent .rt-rightbox .rt-btn{
+        width: 100%;
+        margin: 5px 0;
+    }
+    .rt-category-image{
+        width: 100%;
+    }
+    .rt-beacreater-content{
+        padding: 50px 15px;
+    }
+    .rt-membership-box{
+        width: 100%;
+        padding: 30px 20px;
+        margin-bottom: 30px;
+    }
+    .rt-membership-content{
+        width: 100%;
+        display: block;
+    }
+    .rt-tabsnav{
+        flex-direction: column;
+    }
+    .rt-tabsnav .nav-item a{
+        padding: 5px 0;
+    }
+    .rt-paymentmethod{
+        height: 100%;
+    }
+    .rt-earningchart .rt-title{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .rt-earningchart .rt-title .rt-tabsnav{
+        margin: 0;
+    }
+    .rt-redeemcoins .rt-inputwithbtn .rt-countandbtn{
+        padding-bottom: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+        .rt-btn{
+            margin: 10px 0 0;
+        }
+    }
+    .rt-notificationdropdown .rt-themedropdownmenu{
+        right: -88px !important;
+    }
+    .rt-heading .rt-rightbox{
+        width: 100%;
+    }
+    .rt-heading .rt-rightbox .rt-actiondropdown{
+        margin-left: auto;
+    }
+    .rt-fansandcreatorchart{
+        padding: 15px;
+    }
+    .rt-statisticbox .rt-contentbox span{
+        font-size: 2.2rem;
+    }
+    .rt-fansandcreatorchart .rt-title{
+        flex-direction: column;
+        align-items: flex-start;
+        h2{
+            margin-bottom: 10px;
+        }
+        .rt-rightarea{
+            margin: 0;
+        }
+    }
+    .rt-creatormanagement .rt-themeselect{
+        margin: 0 0 10px;
+    }
+    .rt-contentboxmodal .rt-btn2 {
+        min-width: 42%;
+    }
+    .rt-contentboxmodal h3{
+        font-size: 2.6rem;
+    }
+    .rt-thememodal .modal-body{
+        padding-top: 0;
+    }
+    .rt-thememodal .modal-body {
+        padding: 15px;
+    }
+    .rt-chatlistbox .rt-titlebox{
+        text-align: center;
+    }
+}
+@media (max-width: 359px){
+    .rt-commentform {
+        padding-top: 10px;
+    }
+    .rt-inputwithcoinbox .rt-right{
+        flex-direction: column;
+    }
+    .rt-rightsidebar{
+        width: 270px;
+        right: -300px;
+    }
+    .rt-leftsidebar-expand .rt-collapsbtn {
+        right: 0;
+        z-index: 2;
+    }
+    .rt-sidebar-expand{
+        right: -30px;
+        .rt-collapsbtn{
+            left: 0;
+            z-index: 2;
+        }
+    }
+    .rt-addnav .rt-coinbox {
+        margin-right: 0;
+    }
+    .rt-chatsidebar {
+        width: 260px;
+    }
+    .rt-chatsidebar-expand .rt-chatbtn {
+        left: 260px;
+    }
+    .rt-postcontent .rt-heading .rt-rightbox{
+        flex-direction: column;
+    }
+    .rt-postcontent .rt-rightbox .rt-coins{
+        margin: 0;
+    }
+    .rt-heading .rt-rightbox {
+        margin: 10px 0;
+    }
+    .rt-suggestionbox .rt-themecontent{
+        flex-direction: column;
+    }
+    .rt-suggestionbox .rt-followbtn{
+        margin: 10px auto 0;
+    }
+    .rt-statistics {
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    }
+    .rt-buycoinsbox .rt-themedropdownmenu,
+    .rt-coindropdown .rt-themedropdownmenu{
+        right: -122px !important;
+        min-width: 300px;
+    }
+    .rt-paymentmethod .rt-title{
+        flex-direction: column;
+        align-items: flex-start;
+        h3{
+            margin-bottom: 15px;
+        }
+        strong{
+            margin: 0;
+        }
+    }
+    .rt-redeemcoins .rt-inputwithbtn .rt-countandbtn .rt-btn{
+        padding: 0 20px;
+    }
+    .rt-notificationdropdown .rt-themedropdownmenu{
+        min-width: 310px;
+    }
+    .rt-uploadiconlist li {
+        padding: 0 5px;
+    }
+    .rt-statisticbox{
+        padding: 20px 15px;
+    }
+    .rt-contentboxmodal .rt-btn2 {
+        min-width: 100%;
+    }
+    .rt-contentboxmodal .rt-btncancel{
+        margin: 10px 0 0;
+    }
+}

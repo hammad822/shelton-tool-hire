@@ -1,0 +1,2389 @@
+@import "reset";
+/* =============================================
+			Wrapper Style
+============================================= */
+.rt-wrapper{
+    overflow: hidden;
+    padding: 100px 0 0;
+    background: $WhiteSmoke;
+}
+.rt-container{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+    max-width: 1920px;
+}
+.rt-content{
+    padding: 30px 0 30px 330px;
+}
+.rt-pageheading{
+    display: flex;
+    padding: 14px 30px;
+    align-items: center;
+    .rt-title{
+        h2{
+            margin: 0;
+            color: $Charade;
+            font-size: 2.2rem;
+            @include product-sens-medium;
+        }
+    }
+    .rt-rightarea{
+        margin-left: auto;
+    }
+}
+
+/* =============================================
+			Login Page Style
+============================================= */
+.rt-loginsignup{
+    height: 100vh;
+    overflow: hidden;
+    margin-top: -100px;
+    position: relative;
+    background: transparent;
+}
+.rt-logovertical{
+    width: 133px;
+    margin-bottom: 50px;
+    img{
+        display: block;
+    }
+}
+.rt-loginsignup-area{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: auto;
+    position: relative;
+    @include scrollbar;
+    // &::-webkit-scrollbar {display: none;}
+
+    .rt-imagebox{
+        width: 100%;
+        text-align: center;
+    }
+    .rt-description{
+        text-align: left;
+        margin-bottom: 30px;
+
+        p{
+            text-align: left;
+        }
+    }
+}
+.rt-loginsignup-content{
+    width: 100%;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    // padding: 160px 0 100px;
+}
+.rt-themefrombox{
+    width: 490px;
+    margin: 0 auto;
+    @include layout;
+    padding: 50px 30px 45px;
+    .rt-heading{
+        padding: 0;
+        text-align: center;
+        margin-bottom: 30px;
+        flex-direction: column;
+        align-items: flex-start;
+        p{
+            margin: 0;
+            color: $Raven;
+            font-size: 16px;
+            @include product-sens-reqular;
+        }
+    }
+    h2{
+        color: $Charade;
+        font-size: 2.4rem;
+        margin-bottom: 10px;
+        @include product-sens-reqular;
+    }
+    .rt-btnfill{
+        height: 50px;
+        margin-top: 30px;
+    }
+    .rt-customcheckbox{
+        font-size: 14px;
+        text-transform: capitalize;
+    }
+    .rt-forgetpassword{
+        font-size: 14px;
+        color: $Aluminium;
+        @include product-sens-reqular;
+        &:hover{
+            color: $themecolor;
+        }
+    }
+    p{
+        font-size: 16px;
+        color: $Aluminium;
+        text-align: center;
+        @include product-sens-reqular;
+        a{
+            color: $themecolor;
+            @include product-sens-bold;
+            text-transform: capitalize;
+            &:hover{
+                color: $themecolor;
+            }
+        }
+    }
+}
+.rt-divder{
+    margin: 30px 0;
+    position: relative;
+    &::before{
+        @include after-before;
+        top: 50%;
+        width: 40%;
+        height: 1px;
+        background: $whitelight;
+    }
+    &::after{
+        @include after-before;
+        top: 50%;
+        right: 0;
+        left: auto;
+        width: 40%;
+        height: 1px;
+        background: $whitelight;
+    }
+}
+.rt-or{
+    width: 90px;
+    margin: 0 auto;
+    display: block;
+    color: $Charade;
+    font-size: 14px;
+    text-align: center;
+    background: transparent;
+    text-transform: capitalize;
+    @include product-sens-bold;
+}
+.rt-facebookbtn{
+    border: 0;
+    width: 100%;
+    height: 50px;
+    color: $white;
+    margin-bottom: 50px;
+    @include pixelborderfilldarkblue;
+    &::after{
+        z-index: 1;
+    }
+    &::before{
+        @include transition();
+        @include after-before;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background: $SummerSky;
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    &:hover{
+        @include pixelborderfillblue;
+    }
+    i{
+        font-size: 2rem;
+        margin-right: 20px;
+    }
+
+}
+.rt-facebookbtn:hover::before{
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+.rt-texbox{
+    float: left;
+    width: 500px;
+    margin-left: 170px;
+    h1{
+        margin: 0;
+        font-size: 8rem;
+        color: $BalticSea;
+        text-transform: none;
+        @include brinnan-light;
+    }
+}
+
+.rt-roundimage{
+    width: 130px;
+    height: 130px;
+    line-height: 130px;
+    margin: 0 auto 30px;
+}
+.rt-inputwithbtn button,
+.rt-inputwithicon i{
+    font-size: 10px;
+}
+.rt-inputwithicon i.icon-eye-icon:before{
+    font-size: 14px;
+}
+.rt-inputwithicon i.icon-close-eye:before{
+    font-size: 10px;
+}
+.toggle-password.icon-close-eye{
+    font-size: 10px;
+}
+/* =============================================
+			Header Style
+============================================= */
+.rt-header {
+    top: 0;
+    left: 0;
+	z-index: 10;
+    width: 100%;
+	position: fixed;
+    background: $white;
+}
+.rt-nav{
+    display: flex;
+    padding: 25px 0;
+    min-height: 100px;
+    background: $white;
+    align-items: center;
+}
+.rt-logo{
+    width: 65px;
+    overflow: hidden;
+    a{
+        display: block;
+        img{
+            width: 100%;
+            display: block;
+        }
+    }
+}
+.rt-addnavarea{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+.rt-menubtn{
+    display: none;
+}
+.rt-topsearch{
+    width: 360px;
+    margin: 0 auto;
+    max-width:360px;
+    .rt-collapssearchbtn{
+        display: none;
+    }
+    .rt-themeform{
+        margin-left: 30px;
+    }
+    .rt-inputwithbg{
+        border-width: 3px;
+        border-color: #E8E8E8;
+        border-image-source: url(assets/images/pixel-gray.svg);
+    }
+    .rt-inputwithbtn{
+        .form-control{
+            height: 44px;
+            padding: 10px 45px 10px 20px;
+        }
+        .rt-searchbtn{
+            right: 0;
+            width: 40px;
+            height: 44px;
+            color: $Charade;
+            font-size: 2rem;
+        }
+    }
+}
+.rt-addnav{
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    .rt-notificationdropdown{
+        margin: 0 40px;
+        .rt-notificationbtn{
+            font-size: 20px;
+            position: relative;
+            @include transition;
+            &:hover{
+                color: $themecolor;
+            }
+            .rt-dote{
+                top: -5px;
+                width: 4px;
+                height: 4px;
+                right: -5px;
+                position: absolute;
+                border-radius: 50%;
+                background: $themecolor;
+            }
+        }
+    }
+}
+.rt-profiledropdown{
+    // margin-right: 25px;
+    .rt-themecontent{
+        align-items: center;
+    }
+    .rt-roundimage{
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        margin: 0 15px 0 0;
+        position: relative;
+        span{
+            right: 0px;
+            width: 16px;
+            bottom: -5px;
+            height: 16px;
+            color: $white;
+            display: block;
+            font-size: 4px;
+            line-height: 14px;
+            border-radius: 50%;
+            position: absolute;
+            background: $Mantis;
+            border: 2px solid $white;
+            i{
+                color: $white;
+                font-size: 4px;
+                line-height: 15px;
+            }
+        }
+    }
+    .rt-titlebox{
+        align-items: start;
+        margin-right: 25px;
+        flex-direction: column;
+        h5{
+            font-size: 16px;
+            color: $Charade;
+            margin-bottom: 3px;
+            text-transform: capitalize;
+            @include product-sens-reqular;
+        }
+        span{
+            display: block;
+            font-size: 14px;
+            color: $GreyChateau;
+            @include product-sens-reqular;
+        }
+    }
+    i.icon-down-arrow{
+        color: $Charade;
+        font-size: 10px;
+    }
+}
+.rt-notificationdropdown{
+    .rt-themedropdownmenu{
+        height: 334px;
+        min-width: 350px;
+        overflow-y: scroll;
+        padding: 15px 0;
+        @include scrollbar;
+        left: auto !important;
+        top: 22px !important;
+        right: 0 !important;
+        transform: none !important;
+    }
+    .rt-notificationlist{
+        list-style: none;
+        @include transition;
+        li{
+            padding: 15px 30px;
+            list-style-type: none;
+            border-bottom: 1px solid $Whisper;
+            a{
+                padding: 0;
+                display: block;
+                font-size: 16px;
+            }
+            h4{
+                color: $Charade;
+                font-size: 16px;
+                @include product-sens-reqular;
+                span{
+                    font-size: 16px;
+                    color: $themecolor;
+                    @include product-sens-bold;
+                }
+            }
+            span{
+                color: $Silver;
+                font-size: 12px;
+                @include product-sens-reqular;
+            }
+            &:hover{
+                background: rgba(252,81,147,0.1);
+            }
+        }
+    }
+}
+.rt-buycoinsbox,
+.rt-coindropdown{
+    .rt-themedropdownmenu{
+        padding: 20px;
+        min-width: 360px;
+        right: 0 !important;
+        left: auto !important;
+    }
+    h3{
+        font-size: 5px;
+        font-size: 16px;
+        color: $Charade;
+        @include product-sens-bold;
+    }
+    .rt-description{
+        margin-bottom: 12px;
+        p{
+            margin: 0;
+            font-size: 16px;
+            color: $Aluminium;
+        }
+    }
+    .rt-coinslist{
+        list-style: none;
+        li{
+            display: flex;
+            padding: 8px 0;
+            align-items: center;
+            list-style-type: none;
+            span{
+                color: $black;
+                font-size: 16px;
+                display: inline-block;
+                vertical-align: middle;
+                @include product-sens-reqular;
+                img{
+                    width: 23px;
+                    height: 32px;
+                    margin-right: 12px;
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+            }
+            button.rt-btn{
+                width: auto;
+                color: $white;
+                padding: 0 20px;
+                margin-left: auto;
+                @include pixelborderfill;
+            }
+        }
+    }
+}
+/* =============================================
+			Sidebar Menu Style
+============================================= */
+.rt-sidebar-menu{
+    left: 30px;
+    top: 130px;
+    z-index: 11;
+    width: 300px;
+    padding: 15px;
+    position: fixed;
+    @include layout;
+    @include transition;
+    height: calc(100vh - 160px);
+    border-radius: 12px;
+}
+.rt-navigation{
+    width: 100%;
+    overflow-y: scroll;
+    @include scrollbar;
+    height: calc(100% - 70px);
+    &::-webkit-scrollbar {
+        width: 0;
+    }
+    ul{
+        padding: 0;
+        width: 100%;
+        list-style: none;
+        li{
+            padding: 5px 0;
+            display: block;
+            list-style-type: none;
+            // border-bottom: 1px solid $white;
+            button,
+            a{
+                width: 100%;
+                padding: 15px;
+                display: flex;
+                font-size: 16px;
+                overflow: hidden;
+                color: $OxfordBlue;
+                position: relative;
+                border-radius: 6px;
+                white-space: nowrap;
+                @include transition;
+                background: transparent;
+                text-transform: capitalize;
+                @include product-sens-reqular;
+                &:hover{
+                    color: $white;
+                    background: $themecolor;
+                }
+                i{
+                    width: 20px;
+                    height: 20px;
+                    font-size: 20px;
+                    line-height: 20px;
+                    @include transition;
+                    vertical-align: middle;
+                }
+                i.icon-down-arrow{
+                    font-size: 8px;
+                    line-height: 23px;
+                    margin-left: auto;
+                    @include transition;
+                    -moz-transform: rotate(0);
+                    -webkit-transform: rotate(0);
+                    -o-transform: rotate(0);
+                    -ms-transform: rotate(0);
+                    transform: rotate(0);
+                }
+                span{
+                    top: 1px;
+                    right: -20px;
+                    position: relative;
+                    @include transition;
+                }
+            }
+        }
+        a.active{
+            color: $white;
+            background: $themecolor;
+            span{
+                color: $white;
+            }
+        }
+    }
+    .at-submenu{
+        // height: 0;
+        // opacity: 0;
+        // visibility: hidden;
+        padding: 0 0 0 40px;
+        @include transition;
+        li{
+            padding: 0;
+            a{
+                padding: 8px 15px;
+                &:hover{
+                    background: transparent;
+                    color: $themecolor;
+                }
+            }
+        }
+    }
+}
+.rt-navigation ul li.open{
+    a{
+        i.icon-down-arrow{
+            -moz-transform: rotate(180deg);
+            -webkit-transform: rotate(180deg);
+            -o-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+            transform: rotate(180deg)
+        }
+    }
+    .at-submenu{
+        opacity: 1;
+        height: 100%;
+        visibility: visible;
+    }
+}
+.rt-logoutarea{
+    padding-top: 20px;
+    a,
+    button{
+        width: 100%;
+        padding: 15px;
+        display: flex;
+        font-size: 16px;
+        overflow: hidden;
+        color: $OxfordBlue;
+        position: relative;
+        border-radius: 6px;
+        white-space: nowrap;
+        @include transition;
+        text-transform: capitalize;
+        @include product-sens-reqular;
+        background: $WhiteSmoke;
+        &:hover{
+            color: $white;
+            background: $themecolor;
+            i{
+                color: $white;
+            }
+        }
+        i{
+            width: 20px;
+            height: 20px;
+            font-size: 20px;
+            line-height: 20px;
+            color: $themecolor;
+            @include transition;
+            vertical-align: middle;
+        }
+        span{
+            top: 1px;
+            right: -20px;
+            position: relative;
+            @include transition;
+        }
+
+    }
+}
+/* =============================================
+			Dashboard Page Style
+============================================= */
+.rt-chartandstatistics{
+    display: flex;
+    margin-bottom: 15px;
+}
+.rt-fansandcreatorchart{
+    @include layout;
+    margin-bottom: 0;
+    margin-right: 40px;
+    border-radius: 12px;
+    padding: 30px 30px 0 30px;
+    width: calc(100% - 400px);
+    .rt-title{
+        display: flex;
+        // margin-bottom: 20px;
+        align-items: center;
+        h2{
+            margin: 0;
+            font-size: 2.4rem;
+            @include product-sens-medium;
+        }
+        .rt-rightarea{
+            margin-left: auto;
+        }
+    }
+}
+.rt-userchat{
+    width: 100%;
+}
+.highcharts-point{
+    display: none;
+}
+.highcharts-legend-item .highcharts-graph{
+    stroke-width: 15px;
+}
+.highcharts-legend-item .highcharts-point{display: block;}
+.rt-themeselect{
+    width: 140px;
+    .form-control{
+        padding: 10px 20px;
+    }
+    .css-yk16xz-control{
+        outline: none;
+        border-radius: 8px;
+        border-color: $Silver !important;
+        background: rgba(255, 255, 255, 0.5);
+    }
+    .css-g1d714-ValueContainer{
+        padding: 10px 16px;
+    }
+    .css-1okebmr-indicatorSeparator{
+        width: 0;
+        margin: 0;
+        background: transparent;
+    }
+    .css-1pahdxg-control:hover{
+        border-color: $white;
+    }
+    .css-26l3qy-menu{
+        margin: 5px 0 0;
+        background: $white;
+        border-radius: 12px;
+    }
+    .css-4ljt47-MenuList{
+        padding: 10px 0;
+    }
+    .css-yt9ioa-option,
+    .css-1n7v3ny-option{
+        color: $Raven;
+        padding: 4px 16px;
+    }
+    .css-9gakcf-option,
+    .css-1n7v3ny-option{
+        color: $Raven;
+        padding: 4px 16px;
+        background: #f4f4f4;
+    }
+    .css-9gakcf-option{
+        color: $white;
+        background: $themecolor;
+    }
+    .css-tlfecz-indicatorContainer,
+    .css-1uccc91-singleValue{
+        color: $Raven;
+    }
+}
+.rt-statistics{
+    width: 360px;
+    display: block;
+    margin-left: auto;
+}
+.rt-statisticbox{
+    display: flex;
+    @include layout;
+    padding: 20px 30px;
+    text-align: center;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    border: 1px solid $white;
+    &:last-child{
+        margin: 0;
+    }
+    .rt-contentbox{
+        margin: 0;
+        width: auto;
+        text-align: left;
+        overflow-y: initial;
+        align-items: flex-start;
+        span{
+            display: block;
+            color: $Charade;
+            font-size: 1.8rem;
+            margin-bottom: 18px;
+            @include product-sens-medium;
+        }
+        h3{
+            margin: 0;
+            color: $Charade;
+            font-size: 3.6rem;
+            @include product-sens-medium;
+        }
+    }
+    .rt-progress{
+        margin-left: auto;
+    }
+    .rt-progressbox{
+        text-align: right;
+        margin-bottom: 27px;
+        h4{
+            margin: 0 0 5px;
+            font-size: 12px;
+            color: $GreyChateau;
+            @include product-sens-reqular;
+        }
+        span{
+            display: block;
+            font-size: 16px;
+            @include product-sens-reqular;
+            color: $GreyChateau;
+            i{
+                font-size: 14px;
+            }
+        }
+    }
+}
+.rt-creator-requests{
+    .rt-pageheading{
+        padding-bottom: 10px;
+        border-bottom: 1px solid $whitelight;
+    }
+    .rt-rightarea{
+        .rt-viewallbtn{
+            font-size: 14px;
+            color: $themecolor;
+            text-transform: capitalize;
+            @include product-sens-reqular;
+        }
+    }
+}
+.rt-viewallbtn{
+    font-size: 14px;
+    color: $themecolor;
+    text-transform: capitalize;
+    @include product-sens-reqular;
+}
+.rt-themetable{
+    @include layout;
+    border-radius: 12px;
+    span{
+        font-size: 14px;
+        color: $GreyChateau;
+        display: inline-block;
+        @include product-sens-reqular;
+    }
+}
+.table{
+    padding: 4px 30px;
+    td{
+        color: $Charade;
+    }
+    .rt-roundimage{
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
+        margin: 0 15px 0 0;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .rt-actionbtns{
+        text-align: right;
+    }
+    .rt-rejactbtn{
+        color: $red;
+        font-size: 20px;
+        margin: 0 15px;
+    }
+    .rt-acceptbtn{
+        margin: 0 15px;
+        font-size: 2rem;
+        color: $Shamrock;
+    }
+}
+.rt-pagenationarea{
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    span{
+        color: $Charade;
+        margin-left: auto;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .rt-roundbtn{
+        width: 25px;
+        height: 25px;
+        color: $white;
+        font-size: 6px;
+        line-height: 25px;
+        text-align: center;
+        border-radius: 50%;
+        background: $themecolor;
+    }
+    .rt-prev{
+        margin-left: 15px;
+        i{
+            display: block;
+            -moz-transform: rotate(90deg);
+            -webkit-transform: rotate(90deg);
+            -o-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+        }
+    }
+    .rt-next{
+        margin-left: 15px;
+        i{
+            display: block;
+            -moz-transform: rotate(270deg);
+            -webkit-transform: rotate(270deg);
+            -o-transform: rotate(270deg);
+            -ms-transform: rotate(270deg);
+            transform: rotate(270deg);
+        }
+    }
+}
+.rt-chartbox{
+    background: $white;
+    @include bd-radius(12px);
+    padding: 30px 30px 0 30px;
+    .rt-pageheading{
+        padding: 0 0 14px;
+    }
+}
+/* =============================================
+			Fan Management page Style
+============================================= */
+.rt-creatormanagement,
+.rt-fanmanagement{
+    .rt-pageheading{
+        border-bottom: 0;
+    }
+    .rt-themeselect{
+        width: 190px;
+        .form-control{
+            height: 50px;
+        }
+        .css-yk16xz-control{
+            min-height: 50px;
+            background: $white;
+        }
+        .css-g1d714-ValueContainer{
+            padding: 14px 16px;
+        }
+    }
+    .table{
+        th,
+        td{
+            &:last-child{
+                text-align: right;
+            }
+            /* &:nth-child(5){
+                text-align: center;
+            } */
+            p{
+                margin: 0;
+                width: 250px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+}
+.rt-rightarea{
+    display: flex;
+    align-items: center;
+}
+.rt-search{
+    width: 413px;
+    margin-right: 15px;
+    .rt-inputwithicon{
+        i{
+            left: 20px;
+            right: auto;
+            font-size: 20px;
+            line-height: 50px;
+            color: $themecolor;
+        }
+        .form-control{
+            height: 50px;
+            border-radius: 8px;
+            border: 1px solid $Silver;
+            padding: 15px 20px 15px 60px;
+        }
+    }
+}
+.rt-statusbtn{
+    height: 38px;
+    color: $white;
+    line-height: 38px;
+    min-width: 116px;
+    border-radius: 8px;
+    background: $Shamrock;
+}
+.rt-blockbtn{
+    background: $red;
+}
+.rt-pendingbtn{
+    background: $EnergyYellow;
+}
+.rt-actiondropdown{
+    .rt-themedropdownmenu{
+        padding: 10px 0;
+        min-width: 170px;
+        a,
+        button{
+            padding: 10px 20px;
+            &:hover{
+                color: $Raven;
+                background: $WhiteSmoke;
+            }
+        }
+    }
+}
+.rt-creatorrequest-btn{
+    height: 50px;
+    color: $white;
+    font-size: 16px;
+    padding: 0 20px;
+    min-width: 190px;
+    line-height: 50px;
+    margin-left: 15px;
+    border-radius: 8px;
+    text-align: center;
+    background: $themecolor;
+    text-transform: capitalize;
+    @include product-sens-reqular;
+    &:hover{
+        color: $white;
+    }
+
+}
+
+/* =============================================
+        Subscription Management Style
+============================================= */
+.rt-coinpolicy{
+    padding: 30px;
+    @include layout;
+    margin-bottom: 30px;
+    .rt-pageheading{
+        padding: 0 0 30px;
+        span{
+            display: block;
+            color: $Charade;
+            font-size: 16px;
+            margin-top: 10px;
+            @include product-sens-reqular;
+        }
+    }
+    .rt-description{
+        padding-right: 40%;
+        margin-bottom: 30px;
+    }
+}
+.rt-subscriptions{
+    padding: 30px;
+    @include layout;
+    .rt-pageheading{
+        padding: 0 0 30px;
+    }
+}
+.rt-membership-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 30px
+}
+.rt-membership-box{
+    @include layout;
+    padding: 40px 50px;
+    text-align: center;
+    @include transition;
+    .rt-head{
+        align-items: center;
+        justify-content: center;
+        h3{
+            i{
+                display: none;
+                margin-left: 10px;
+                color: $themecolor;
+                vertical-align: middle;
+            }
+        }
+    }
+    .rt-customradio{
+        width: 100%;
+        height: auto;
+        .rt-btn{
+            margin: 0 auto;
+        }
+    }
+}
+.rt-membership-box.active{
+    border: 2px solid $themecolor;
+    .rt-head{
+        h3{
+            i{
+                display: inline-block;
+            }
+        }
+    }
+}
+.rt-head{
+    margin-bottom: 30px;
+    h3{
+        color: $Charade;
+        font-size: 2.4rem;
+        @include product-sens-bold;
+    }
+}
+.rt-imagebox{
+    width: 205px;
+    min-height: 147px;
+    margin: 0 auto 20px;
+    img{
+        display: block;
+    }
+}
+.rt-percentage{
+    display: block;
+    color: $Charade;
+    font-size: 3rem;
+    min-height: 57px;
+    margin-bottom: 10px;
+    @include product-sens-bold;
+    em{
+        display: block;
+        font-size: 14px;
+        font-style: normal;
+        color: $themecolor;
+    }
+}
+.rt-membershiplist{
+    list-style: none;
+    min-height: 170px;
+    li{
+        font-size: 16px;
+        padding: 8px 0;
+        color: $GreyChateau;
+        list-style-type: none;
+        span{
+            position: relative;
+            padding-left: 15px;
+            &::after{
+                width: 5px;
+                height: 5px;
+                @include after-before;
+                background: $GreyChateau;
+                top: 7px;
+            }
+        }
+    }
+}
+/* =============================================
+			Edit Coin Policy Modal Style
+============================================= */
+.rt-thememodal {
+    .modal-body{
+        padding: 30px;
+    }
+}
+.rt-contentboxmodal{
+    h3{
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 10px;
+        @include product-sens-reqular;
+    }
+    .rt-description{
+        margin-bottom: 30px;
+        p{
+            color:$DimGray;
+            font-size: 16px;
+            text-align: center;
+            @include product-sens-reqular;
+        }
+    }
+    label{
+        display: block;
+        margin-bottom: 10px;
+        text-transform: capitalize;
+    }
+    .form-control{
+        height: 50px;
+        padding: 15px;
+        background: $white;
+        border-radius: 9px;
+        border: 1px solid $Silver;
+
+        &:focus{
+            border-color: $themecolor;
+        }
+    }
+    .rt-btn2{
+        min-width: 210px;
+    }
+    .rt-btncancel{
+        color: $white;
+        margin-left: 15px;
+        background: $Silver;
+    }
+    textarea.form-control{
+        height: 120px;
+    }
+    .rt-uploadimage{
+        margin: 0;
+        width: 100%;
+        padding: 40px 0;
+        text-align: center;
+    }
+    .rt-figcaption{
+        img{
+            width: 48px;
+            display: block;
+            margin: 0 auto 10px;
+        }
+        h4{
+            font-size: 2rem;
+            color: $Charade;
+            margin-bottom: 10px;
+            @include product-sens-reqular;
+        }
+        span{
+            display: block;
+            font-size: 16px;
+            color: $GreyChateau;
+            @include product-sens-reqular;
+        }
+    }
+}
+
+/* =============================================
+			Send Email Modal Style
+============================================= */
+.rt-sendemail{
+    text-align: center;
+    .rt-sendemailimage{
+        width: 207px;
+        margin: 0 auto 24px;
+        img{
+            display: block;
+        }
+    }
+    .rt-description{
+        margin-bottom: 24px;
+        p{
+            text-align: center;
+        }
+    }
+    a{
+        color: $white;
+        &:hover{
+            color: $white;
+        }
+    }
+    a.rt-btnfill:hover{
+        color: $themecolor;
+    }
+    .rt-btnsarea{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .rt-btn{
+            height: 50px;
+            margin: 0 10px;
+        }
+    }
+}
+.rt-cancelbtn{
+    color: $Aluminium;
+    border-image-source: url(assets/images/pixel-gray.svg);
+}
+.highcharts-background {
+    fill: transparent!important;
+}
+.rt-supportdetailmodal{
+    .rt-roundimage{
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        margin: 0 15px 0 0;
+    }
+    .rt-titlebox{
+        flex-direction: column;
+    }
+}
+.rt-creatorrequests,
+.rt-dashboard{
+    .table{
+        td,
+        th{
+            &:last-child{
+                text-align: right;
+            }
+        }
+    }
+}
+/* =============================================
+			Delete Modal Style
+============================================= */
+.rt-sendemailmodal{
+    .modal-dialog{
+        max-width: 610px;
+    }
+    .rt-content{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        padding: 60px 50px 50px;
+    }
+    .rt-emailimage{
+        width: 80px;
+        margin: 0 auto 70px;
+        img{
+            display: block;
+        }
+    }
+    .rt-description{
+        margin-bottom: 40px;
+    }
+    a{
+        color: $Charade;
+        &:hover{
+            color: $themecolor;
+        }
+    }
+    .rt-btnsarea{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .rt-btn{
+            height: 50px;
+            margin: 0 10px;
+        }
+    }
+}
+.rt-cancelbtn{
+    color: $Aluminium;
+    border-image-source: url(assets/images/pixel-gray.svg);
+}
+/* =============================================
+			Terms & Conditions Style
+============================================= */
+.rt-tabsnav{
+    border: 0;
+    margin-bottom: 20px;
+    .nav-item{
+        margin-right: 10px;
+        margin-bottom: 10px;
+        .nav-link{
+            border: 0;
+            color: $white;
+            background: $themecolor;
+            @include bd-radius(8px);
+            &.active{
+                border: 0;
+                background: $themecolor;
+                @include bd-radius(8px);
+            }
+        }
+        .rt-btn2{
+            &:hover{
+                color: $white;
+            }
+        }
+    }
+}
+.rt-termsandconditions{
+    .rt-coinpolicy{
+        min-height: 700px;
+    }
+    .rt-pageheading{
+        .rt-rightbox{
+            margin-left: auto;
+        }
+    }
+    .rt-description{
+        margin: 0;
+        max-height: 660px;
+        padding: 0 5px 0 0;
+        overflow-y: scroll;
+        @include scrollbar;
+    }
+}
+.rt-edittermsandconditionsmodal{
+    textarea.form-control{
+        height: 230px;
+        margin: 30px 0;
+    }
+}
+/* =============================================
+			Faqs Style
+============================================= */
+.rt-faqs{
+    .rt-rightbox{
+        margin-left: auto;
+    }
+}
+.rt-faqcontent{
+    max-height: 660px;
+    overflow-y: scroll;
+    padding-right: 5px;
+    @include scrollbar;
+
+}
+.rt-faqbox{
+    padding: 10px;
+    margin: 0 0 20px;
+    @include bd-radius(12px);
+    border: 1px solid $Silver;
+    .rt-head{
+        display: flex;
+        margin-bottom: 15px;
+        align-items: center;
+        h3{
+            margin: 0;
+            font-size: 1.8rem;
+            @include product-sens-reqular;
+        }
+    }
+    .rt-description{
+        margin: 0;
+        padding: 0;
+    }
+}
+/* =============================================
+			View Details Modal Style
+============================================= */
+.rt-viewattchmentmodal{
+    .modal-dialog{
+        max-width: 600px;
+    }
+    .rt-contentboxmodal h3{
+        @include product-sens-bold;
+    }
+    .rt-badgeimg{
+        width: 100%;
+        height: 250px;
+        margin: 0 0 20px;
+        img{
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+        }
+    }
+}
+/* =============================================
+        Subscription Plan Style
+============================================= */
+.rt-subscriptionplan{
+    .rt-pageheading{
+        .rt-rightbox{
+            margin-left: auto;
+        }
+    }
+}
+.rt-subscriptionplan-area{
+    padding: 20px 30px;
+}
+.rt-subscriptionbox{
+    padding: 30px;
+    min-height: 700px;
+    position: relative;
+    background: $white;
+    border-radius: 12px;
+    h3{
+        margin-bottom: 10px;
+        @include product-sens-medium;
+    }
+    h4{
+        font-size: 3rem;
+        margin-bottom: 10px;
+        @include product-sens-medium;
+        span{
+            font-size: 1.8rem;
+        }
+    }
+    .rt-description{
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid $Silver;
+        p{
+            margin: 0;
+        }
+    }
+    .rt-list{
+        list-style: none;
+        li{
+            color: $black;
+            font-size: 16px;
+            position: relative;
+            list-style-type: none;
+            padding: 10px 0 10px 25px;
+            text-transform: capitalize;
+            @include product-sens-medium;
+            &:after{
+                @include after-before;
+                top: 50%;
+                color: $Mantis;
+                font-size: 12px;
+                content: "\e926";
+                font-family: 'icomoon';
+                transform: translateY(-50%);
+            }
+        }
+    }
+    .rt-btnbox{
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding: 30px;
+        position: absolute;
+    }
+    .rt-btn{
+        height: 50px;
+        font-size: 18px;
+    }
+}
+/* =============================================
+			Chat room Style
+============================================= */
+.rt-chatroomarea{
+    .rt-rightbox{
+        margin-left: auto;
+    }
+}
+.rt-chatroom{
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+.rt-chatbtn{
+    width: 35px;
+    height: 35px;
+    display: none;
+    color: $white;
+    font-size: 10px;
+    line-height: 20px;
+    border-radius: 6px;
+    @include transition;
+    background: $themecolor;
+    i{
+        display: block;
+        @include transition;
+        line-height: inherit;
+        transform: rotate(270deg);
+    }
+}
+.rt-chatsidebar{
+    width: 360px;
+    @include layout;
+    height: calc(100vh - 209px);
+    border-radius: 15px 0 0 15px;
+    border-right: 1px solid $Whisper;
+    .rt-head{
+        padding: 24px 24px 0;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .rt-title{
+        margin-bottom: 24px;
+        h3{
+            margin: 0;
+            color: $Charade;
+            font-size: 16px;
+            position: relative;
+            @include product-sens-bold;
+        }
+    }
+    .rt-chatsearch{
+        width: 100%;
+        .rt-inputwithbtn{
+            button{
+                right: 10px;
+                height: 40px;
+                font-size: 20px;
+            }
+            i{
+                font-size: 20px;
+            }
+            .form-control{
+                padding: 10px 40px 10px 15px;
+            }
+        }
+    }
+}
+.rt-chatlistbox{
+    @include scrollbar;
+    padding: 0 24px 24px;
+    overflow-y: scroll;
+    height: calc(100% - 137px);
+    .rt-chatlist{
+        border: 0;
+    }
+    .nav-item{
+        width: 100%;
+        padding: 4px 0;
+    }
+    .nav-link{
+        margin: 0;
+        border: 0;
+        padding: 0;
+        width: 100%;
+        position: relative;
+        &::before{
+            height: 0;
+            width: 3px;
+            opacity: 0;
+            @include after-before;
+            left: -21px;
+            top: 50%;
+            background: $themecolor;
+            -moz-transform: translateX(-50%) translateY(-50%);
+            -webkit-transform: translateX(-50%) translateY(-50%);
+            -o-transform: translateX(-50%) translateY(-50%);
+            -ms-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+        }
+        &:hover{
+            .rt-titlebox h5{
+                color: $themecolor;
+            }
+            &::before{
+                opacity: 1;
+                height: 40px;
+            }
+        }
+    }
+    .nav-link.active{
+        .rt-titlebox h5{
+            color: $themecolor;
+        }
+        &::before{
+            opacity: 1;
+            height: 40px;
+        }
+    }
+    .rt-roundimage{
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        position: relative;
+        margin: 0 12px 0 0;
+        .rt-statusmark{
+            right: 0;
+            width: 10px;
+            bottom: 5px;
+            height: 10px;
+            position: absolute;
+            border-radius: 50%;
+            position: absolute;
+            background: $Mantis;
+            border: 2px solid $white;
+        }
+        .rt-statusmark.red{
+            background: $red;
+        }
+        .rt-statusmark.yellow{
+            background: $EnergyYellow;
+        }
+    }
+    .rt-themecontent{
+        align-items: flex-start;
+        .rt-rightbox{
+            margin-left: auto;
+            .rt-time{
+                display: block;
+                font-size: 14px;
+                color: $GreyChateau;
+                @include product-sens-reqular;
+            }
+        }
+    }
+    .rt-titlebox{
+        flex-direction: column;
+        align-items: flex-start;
+        h5{
+            color: $black;
+            font-size: 16px;
+            margin-bottom: 3px;
+            @include transition;
+            @include product-sens-reqular;
+        }
+        span{
+            display: block;
+            font-size: 14px;
+            color: $GreyChateau;
+            @include product-sens-reqular;
+        }
+    }
+}
+.rt-tabcontent{
+    width: calc(100% - 360px);
+}
+.rt-chatcontentarea{
+    width: 100%;
+    background: $white;
+    height: calc(100vh - 209px);
+    border-radius: 0 12px 12px 0;
+    .rt-head{
+        margin-bottom: 0;
+        padding: 14px 16px;
+        border-bottom: 1px solid $Whisper;
+        .rt-roundimage{
+            width: 44px;
+            height: 44px;
+            line-height: 44px;
+            margin: 0 15px 0 0;
+        }
+        .rt-titlebox{
+            flex-direction: column;
+            h5{
+                color: $black;
+                font-size: 16px;
+                margin-bottom: 3px;
+                @include product-sens-bold;
+            }
+            span{
+                display: block;
+                font-size: 14px;
+                color: $GreyChateau;
+                @include product-sens-reqular;
+            }
+        }
+    }
+    .rt-chatcontent{
+        padding: 24px 16px;
+        @include scrollbar;
+        overflow-y: scroll;
+        height: calc(100% - 175px);
+        .rt-messagebox{
+            display: flex;
+            margin-bottom: 15px;
+            align-items: flex-end;
+        }
+        .rt-roundimage{
+            width: 44px;
+            height: 44px;
+            margin: 0 8px 0 0;
+            line-height: 44px;
+        }
+        .rt-messagetextbox{
+            max-width: 620px;
+            padding: 14px 16px;
+            background: $WhiteSmoke;
+            border-radius: 12px 12px 0 12px;
+            .rt-title{
+                display: flex;
+                align-items: center;
+                h3{
+                    color: $black;
+                    font-size: 16px;
+                    margin-bottom: 6px;
+                    @include product-sens-reqular;
+                }
+                .rt-timeanddate{
+                    font-size: 14px;
+                    padding-left: 24px;
+                    position: relative;
+                    color: $GreyChateau;
+                    display: inline-block;
+                    @include product-sens-bold;
+                    &:after{
+                        width: 4px;
+                        height: 4px;
+                        @include after-before;
+                        background: $GreyChateau;
+                        top: 6px;
+                        left: 10px;
+                    }
+                }
+            }
+            .rt-description{
+                p{
+                    margin: 0;
+                    font-size: 16px;
+                    color: $GreyChateau;
+                    @include product-sens-reqular;
+                }
+            }
+        }
+        .rt-right{
+            .rt-roundimage{
+                margin: 0 0 0 8px;
+            }
+            .rt-messagetextbox{
+                margin-left: auto;
+                border-radius: 12px 12px 12px 0;
+                background: $themecolor;
+                .rt-title{
+                    h3{
+                        color: $white;
+                    }
+                    .rt-timeanddate{
+                        color: $white;
+                        &::after{
+                            background: $white;
+                        }
+                    }
+                }
+            }
+            .rt-description{
+                p{
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+.rt-chatfooter{
+    padding: 20px 16px;
+    .rt-textbox{
+        z-index: 1;
+        display: flex;
+        position: relative;
+        border-radius: 12px;
+        @include transition();
+        background: transparent;
+        border:1px solid #E8E8E8;
+        .form-control{
+            border: 0;
+            height: 60px;
+            width: calc(100% - 77px);
+        }
+        .rt-send{
+            padding: 0 20px;
+            font-size: 16px;
+            margin-left: auto;
+            color: $themecolor;
+            @include product-sens-bold;
+            &:focus,
+            &:active{
+                color: $SummerSky;
+            }
+        }
+    }
+}
+/* =============================================
+        Add New Chat Modal Style
+============================================= */
+.rt-addnewchatmodal{
+    .rt-contentboxmodal{
+        h3{
+            margin-bottom: 25px;
+        }
+    }
+    .rt-chatsearch{
+        margin-bottom: 20px;
+        .rt-inputwithbtn button,
+        .rt-inputwithicon i{
+            font-size: 20px;
+            color: $themecolor;
+        }
+    }
+    .rt-userlist{
+        list-style: none;
+        max-height: 350px;
+        overflow-y: scroll;
+        @include scrollbar;
+        li{
+            padding: 5px 0;
+            list-style-type: none;
+        }
+        .rt-roundimage{
+            width: 50px;
+            height: 50px;
+            margin-bottom: 0;
+            line-height: 50px;
+        }
+    }
+}
+
+/* =============================================
+			Profile Page Style
+============================================= */
+.rt-profile{
+    margin: 0 auto;
+    max-width: 500px;
+    .rt-editbtn{
+        margin: 0 auto;
+    }
+}
+.rt-profileinfo{
+    padding: 30px 20px;
+    background: $white;
+    border-radius: 12px;
+    ul{
+        list-style: none;
+        margin-bottom: 20px;
+        li{
+            display: flex;
+            color: $black;
+            padding: 5px 0;
+            font-size: 1.8rem;
+            list-style-type: none;
+            strong{
+                text-transform: capitalize;
+                @include product-sens-medium;
+            }
+            span{
+                margin-left: auto;
+                color: $GreyChateau;
+                a{
+                    color: $themecolor;
+                }
+            }
+        }
+    }
+}
+
+.rt-editprofilemodal{
+    .rt-uploadimage{
+        padding: 0;
+        width: 130px;
+        height: 130px;
+        display: block;
+        border-radius: 50%;
+        margin: 0 auto 20px;
+        img{
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+        }
+        .rt-overlay{
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            border-radius: 50%;
+            position: absolute;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            background: rgba(243,243,243,0.8);
+            i{
+                display: block;
+                font-size: 4rem;
+                margin-bottom: 6px;
+            }
+            span{
+                display: block;
+                font-size: 12px;
+                @include product-sens-reqular;
+            }
+        }
+    }
+}
+
+/* =============================================
+			Reported Content Style
+============================================= */
+.rt-reported-content{
+    .table th:last-child{
+        text-align: right;
+    }
+    .table td a{
+        color: $themecolor;
+    }
+
+}
+/* =============================================
+			User details Style
+============================================= */
+.rt-reported-contentarea{
+    margin: 0 auto;
+    max-width: 700px;
+    padding-top: 30px;
+}
+.rt-userdetailpage{
+    padding: 0;
+}
+.rt-userdetail-banner{
+    @include layout;
+    margin-bottom: 30px;
+}
+.rt-bannerimage{
+    width: 100%;
+    height: 300px;
+    img{
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+    }
+}
+.rt-bannercontent{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 30px 30px;
+    .rt-themecontent{
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+    }
+    .rt-roundimage{
+        width: 140px;
+        height: 140px;
+        line-height: 140px;
+        margin: -50px auto 5px;
+        border: 5px solid $white;
+    }
+    .rt-titlebox{
+        flex-direction: column;
+        h5{
+            color: $Charade;
+            font-size: 1.8rem;
+            margin-bottom: 3px;
+            @include product-sens-reqular;
+        }
+        span{
+            display: block;
+            font-size: 16px;
+            margin-bottom: 5px;
+            color: $GreyChateau;
+            @include product-sens-reqular;
+        }
+    }
+    .rt-infobox{
+        display: flex;
+        list-style: none;
+        margin: 15px auto 30px;
+        li{
+            padding: 0 25px;
+            font-size: 16px;
+            color: $Charade;
+            list-style-type: none;
+            @include product-sens-reqular;
+            span{
+                @include product-sens-bold;
+            }
+        }
+    }
+    .rt-rightbox{
+        width: 100%;
+        display: flex;
+        margin-left: 0;
+        .rt-btn{
+            height: 50px;
+            margin: 0 auto;
+            min-width: 140px;
+            // margin-right: 10px;
+        }
+        .rt-actionbtn{
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            position: relative;
+            z-index: 1;
+            @include transition();
+        }
+    }
+}
+.rt-subscriptionbox{
+    @include layout;
+    padding: 35px 30px;
+    margin-bottom: 25px;
+    span{
+        display: block;
+        font-size: 14px;
+        margin-bottom: 5px;
+        color: $GreyChateau;
+        @include product-sens-reqular;
+        strong{
+            font-size: 3rem;
+            color: $themecolor;
+            margin-right: 3px;
+            @include product-sens-bold;
+        }
+    }
+    h3{
+        color: $Charade;
+        font-size: 2.4rem;
+        margin-bottom: 10px;
+        @include product-sens-bold;
+    }
+    .rt-subscriptionlist{
+        list-style: none;
+        margin-bottom: 30px;
+        li{
+            display: block;
+            font-size: 16px;
+            position: relative;
+            padding: 10px 15px;
+            color: $GreyChateau;
+            list-style-type: none;
+            @include product-sens-reqular;
+            &:before{
+                width: 5px;
+                height: 5px;
+                @include after-before;
+                top: 17px;
+                background: $GreyChateau;
+            }
+        }
+    }
+}
+.rt-userdetailpage{
+    .rt-contentbox{
+        height: 100%;
+    }
+    .rt-aboutbox{
+        padding: 0;
+        .rt-title{
+            padding: 20px 30px;
+        }
+        .rt-description{
+            padding: 20px 30px 40px;
+        }
+    }
+}
+.rt-post{
+    @include layout;
+    margin-bottom: 15px;
+}
+.rt-heading{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    .rt-roundimage{
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        margin: 0 12px 0 0;
+    }
+    .rt-titlebox{
+        flex-direction: column;
+        h5{
+            color: $Charade;
+            margin-bottom: 5px;
+        }
+        span{
+            display: block;
+            font-size: 14px;
+            color: $GreyChateau;
+        }
+    }
+    .rt-rightbox{
+        display: flex;
+        margin-left: auto;
+        align-items: center;
+        .rt-actiondropdown{
+            margin-left: 20px;
+            .rt-actionbtn{
+                font-size: 2.2rem;
+            }
+        }
+    }
+}
+.rt-postimage{
+    margin: 0;
+    height: 387px;
+    position: relative;
+    img{
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+    }
+    .rt-overlay{
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        position: absolute;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        background: rgba(0,0,0,0.2);
+        i{
+            color: $white;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        h4{
+            color: $white;
+            font-size: 1.8rem;
+            margin-bottom: 25px;
+            @include product-sens-bold;
+        }
+        .rt-btn{
+            color: $white;
+            @include pixelborderwhite;
+            &:hover{
+                @include pixelborderfill;
+            }
+        }
+    }
+}
+.rt-postcontent{
+    padding: 20px;
+    .rt-heading{
+        padding: 0;
+        margin-bottom: 14px;
+        align-items: flex-start;
+    }
+    .rt-datetime{
+        display: block;
+        font-size: 14px;
+        margin-bottom: 5px;
+        color: $GreyChateau;
+        @include product-sens-reqular;
+    }
+    .rt-title{
+        h3{
+            font-size: 2rem;
+            color: $Charade;
+            margin-bottom: 0;
+            @include product-sens-reqular;
+        }
+    }
+    .rt-rightbox{
+        display: flex;
+        text-align: right;
+        flex-direction: column;
+        .rt-actionbtn{
+            font-size: 16px;
+            color: $GreyChateau;
+            margin-bottom: 10px;
+            @include transition;
+            @include product-sens-reqular;
+            &:hover{
+                color: $themecolor;
+            }
+            i{
+                font-size: 18px;
+                margin-right: 5px;
+                vertical-align: top;
+                display: inline-block;
+            }
+        }
+        .rt-coins{
+            font-size: 16px;
+            color: $Charade;
+            @include product-sens-reqular;
+            img{
+                width: 16px;
+                height: 16px;
+                margin-right: 10px;
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+    }
+    .rt-description{
+        p{
+            font-size: 16px;
+            color: $Charade;
+            margin-bottom: 0;
+            @include product-sens-reqular;
+        }
+    }
+    .rt-actionbtns{
+        display: flex;
+        align-items: center;
+        padding: 30px 0 10px;
+        button{
+            font-size: 16px;
+            margin-right: 30px;
+            @include transition;
+            color: $GreyChateau;
+            @include product-sens-reqular;
+            &:hover{
+                color: $themecolor;
+            }
+            i{
+                font-size: 16px;
+                margin-right: 10px;
+            }
+        }
+        button.active{
+            color: $themecolor;
+        }
+        .rt-sharebtn{
+            margin-right: 0;
+            margin-left: auto;
+            .at-themedropdownmenu{
+                right: 0 !important;
+                top: auto !important;
+                bottom: 30px !important;
+                transform: translate(0) !important;
+            }
+        }
+    }
+}
+.rt-commentsarea{
+    padding: 20px;
+    border-top: 1px solid rgba(225,225,225,0.6);
+    .rt-themecontent{
+        align-items: flex-start;
+    }
+    .rt-roundimage{
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        margin-right: 12px;
+        img{
+            display: block;
+        }
+    }
+    .rt-titlebox{
+        flex-direction: column;
+        .at-description{
+            margin-bottom: 10px;
+            p{
+                margin: 0;
+                font-size: 16px;
+                color: $Aluminium;
+                @include product-sens-reqular;
+            }
+        }
+    }
+    .rt-title{
+        display: flex;
+        margin-bottom: 10px;
+        align-items: center;
+        h5{
+            color: $Charade;
+            font-size: 16px;
+            margin-right: 24px;
+            @include product-sens-reqular;
+        }
+        .rt-coins{
+            color: $Raven;
+            font-size: 16px;
+            @include product-sens-reqular;
+            img{
+                width: 16px;
+                height: 16px;
+                margin-right: 5px;
+            }
+        }
+        .rt-right{
+            margin-left: auto;
+        }
+    }
+    .rt-replyandtime{
+        display: flex;
+        .rt-time{
+            font-size: 14px;
+            color: $GreyChateau;
+            @include product-sens-reqular;
+        }
+        .rt-reply{
+            font-size: 14px;
+            color: $GreyChateau;
+            @include product-sens-reqular;
+        }
+    }
+
+}
+.rt-commentform{
+    padding-top: 30px;
+}
+.rt-commentbox{
+    margin-bottom: 20px;
+}
+.rt-replycomment{
+    padding-left: 60px;
+}
+/* =============================================
+			Reported Story Style
+============================================= */
+.rt-reported-story{
+    .rt-story-img{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .rt-story-video{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+.rt-reported-contentarea{
+    .rt-bannercontent{
+        align-items: flex-start;
+        .rt-description{
+            padding-top: 10px;
+        }
+    }
+    .rt-profileinfo{
+        align-items: center;
+    }
+}
+.rt-reported-content{
+    .rt-profileinfo{
+        margin-top: 60px;
+    }
+}
+/* =============================================
+			Select 2 Style
+============================================= */
+.select2-container{
+    z-index: 1080;
+    width: 100% !important;
+}
+.select2-container--default .select2-selection--multiple{
+    border-radius: 9px;
+    border-color: #C4C4C4;
+}
+.select2-container--default.select2-container--focus .select2-selection--multiple{
+    border-color: $themecolor;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice{
+    color: $black;
+    font-size: 14px;
+    background: $white;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove{
+    color: $themecolor;
+}
+
+
+@import "responsive";
